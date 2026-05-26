@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barber Shop - Tu Estilo Comienza Aquí</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Barber Shop</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#sobre">Sobre Nosotros</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+            <button class="cta-nav" onclick="contactarWhatsApp()">Contactar</button>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- HERO SECTION -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1 class="hero-title">Tu estilo comienza aquí.</h1>
+            <p class="hero-subtitle">Cortes premium, fades perfectos y atención profesional para hombres que exigen lo mejor.</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="contactarWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> Reservar por WhatsApp
+                </button>
+                <a href="#servicios" class="btn-secondary">Ver servicios</a>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">Nuestros Servicios</h2>
+            <p class="section-subtitle scroll-reveal">Experiencias de barbería de clase mundial</p>
+            
+            <div class="servicios-grid">
+                <div class="servicio-card scroll-reveal">
+                    <span class="servicio-icon"><i class="fas fa-scissors"></i></span>
+                    <h3 class="servicio-title">Corte Clásico</h3>
+                    <p class="servicio-desc">Corte tradicional con técnica de precisión, perfecto para un look atemporal y distinguido.</p>
+                    <div class="servicio-price">$350</div>
+                </div>
+ 
+                <div class="servicio-card scroll-reveal">
+                    <span class="servicio-icon"><i class="fas fa-blender"></i></span>
+                    <h3 class="servicio-title">Fade Premium</h3>
+                    <p class="servicio-desc">Fade moderno con diseño personalizado, degradado impecable y líneas nítidas.</p>
+                    <div class="servicio-price">$450</div>
+                </div>
+ 
+                <div class="servicio-card scroll-reveal">
+                    <span class="servicio-icon"><i class="fas fa-droplet"></i></span>
+                    <h3 class="servicio-title">Arreglo de Barba</h3>
+                    <p class="servicio-desc">Afeitado de precisión, perfilado experto y tratamiento nutritivo para una barba impecable.</p>
+                    <div class="servicio-price">$280</div>
+                </div>
+ 
+                <div class="servicio-card scroll-reveal">
+                    <span class="servicio-icon"><i class="fas fa-crown"></i></span>
+                    <h3 class="servicio-title">Paquete Completo</h3>
+                    <p class="servicio-desc">Corte premium + arreglo de barba + masaje facial relajante. La experiencia definitiva.</p>
+                    <div class="servicio-price">$680</div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- GALERÍA -->
+    <section class="galeria" id="galeria">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">Galería de Trabajos</h2>
+            <p class="section-subtitle scroll-reveal">Nuestros mejores cortes y diseños</p>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item scroll-reveal">
+                    <img src="https://cdn.shopify.com/s/files/1/0910/0935/2015/files/corte-de-pelo-hombre-rapado-estilo-buzz-cut.jpg?v=1752046834">
+                </div>
+                <div class="galeria-item scroll-reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJuCTroECeOh72-MSTs740sYVcQ9NE3d-9EA&s">
+                </div>
+                <div class="galeria-item scroll-reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTrXB6u7iU4jj6IxGVYZ2xYPcBRyuri3M0Hg&s">
+                </div>
+                <div class="galeria-item scroll-reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXJzcgC22A872nfBjomRxogj8a9JpLUXbJvw&s">
+                </div>
+                <div class="galeria-item scroll-reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPbykUH64ZzFkLC_tFe6nAPHMnSNSmdR1Ahw&s">
+                </div>
+                <div class="galeria-item scroll-reveal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp7sH9lD07SBqCVFgSceNwUo8Td1zq-_Jk6Q&s">
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- SOBRE NOSOTROS -->
+    <section class="sobre" id="sobre">
+        <div class="container sobre-content">
+            <h2 class="section-title scroll-reveal">Sobre Barber Shop</h2>
+            <p class="sobre-text scroll-reveal">
+                En Barber Shop combinamos técnica artesanal, estilo contemporáneo y atención personalizada para ofrecer una experiencia de barbería premium sin igual. Nuestros barberos son profesionales certificados con más de 10 años de experiencia, comprometidos con perfeccionar cada detalle. Creemos que un corte es más que una transformación; es un acto de confianza.
+            </p>
+        </div>
+    </section>
+ 
+    <!-- TESTIMONIOS -->
+    <section class="testimonios">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">Lo que Dicen Nuestros Clientes</h2>
+            <p class="section-subtitle scroll-reveal">Experiencias reales de gente como tú</p>
+            
+            <div class="testimonios-grid">
+                <div class="testimonio-card scroll-reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonio-text">"El mejor corte que me han hecho. Los barberos saben exactamente qué hacer y la atmósfera del lugar es increíble. Definitivamente volveré."</p>
+                    <p class="testimonio-author">Carlos Mendoza</p>
+                    <p class="testimonio-role">Cliente frecuente</p>
+                </div>
+ 
+                <div class="testimonio-card scroll-reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonio-text">"Ambiente premium, profesionalismo a otro nivel. La barba me quedó perfecta y el servicio fue impecable. 100% recomendado."</p>
+                    <p class="testimonio-author">Diego López</p>
+                    <p class="testimonio-role">Empresario</p>
+                </div>
+ 
+                <div class="testimonio-card scroll-reveal">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonio-text">"He probado varias barberías pero Crown es excepcional. Atención personalizada, técnica impecable y un lugar donde se respira lujo."</p>
+                    <p class="testimonio-author">Alejandro Ruiz</p>
+                    <p class="testimonio-role">Abogado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- UBICACIÓN Y HORARIOS -->
+    <section class="ubicacion" id="ubicacion">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">Horarios y Ubicación</h2>
+            
+            <div class="ubicacion-content">
+                <div class="horarios-card scroll-reveal">
+                    <h3>Horarios de Atención</h3>
+                    <div class="horario-item">
+                        <span class="horario-dia">Lunes - Viernes</span>
+                        <span class="horario-hora">10:00 - 20:00</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Sábado</span>
+                        <span class="horario-hora">09:00 - 21:00</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Domingo</span>
+                        <span class="horario-hora">10:00 - 18:00</span>
+                    </div>
+                    <div class="horario-item">
+                        <span class="horario-dia">Festivos</span>
+                        <span class="horario-hora">Variado</span>
+                    </div>
+                </div>
+ 
+                <div class="mapa-container scroll-reveal">
+                    <div class="mapa-info">
+                        <div class="mapa-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p class="mapa-address">
+                            Direccion Del Local Aqui<br>
+                        </p>
+                        <a href="tel:+525551234567" class="mapa-phone">
+                            <i class="fas fa-phone"></i> +52 55 5123-4567
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-socials">
+                <a href="https://instagram.com" target="_blank" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://whatsapp.com" target="_blank" class="social-link" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:+525551234567" class="social-link" title="Teléfono">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://facebook.com" target="_blank" class="social-link" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <p class="footer-text">
+                © 2026 Barber Shop. Todos los derechos reservados. | Diseñado con precisión.
+            </p>
+        </div>
+    </footer>
+ 
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/523411157500?text=Hola,%20me%20gustaría%20hacer%20una%20reserva%20en%20Barber%20Shop" target="_blank" class="whatsapp-float" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
